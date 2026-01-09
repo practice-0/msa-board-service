@@ -1,0 +1,9 @@
+services:
+  user-services:
+    container_name: board-service
+    image: board-service
+    ports:
+    - 8081:8080
+    depends_on:
+      kafka-server:
+        condition: service_healthy
