@@ -1,7 +1,0 @@
-services:
-  user-services:
-    container_name: board-service
-    image: board-service
-    ports:
-    - 8081:8080
-    
