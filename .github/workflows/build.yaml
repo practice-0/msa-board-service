@@ -44,7 +44,7 @@ jobs:
           SPRING_DATASOURCE_USERNAME: ${{ secrets.DB_USERNAME }}
           SPRING_DATASOURCE_PASSWORD: ${{ secrets.MYSQL_ROOT_PASSWORD }}
           KAFKA_HOST: ${{ secrets.KAFKA_SERVER_HOST }}
-          KAFKA_PORT: 9092
+          KAFKA_PORT: ${{ secrets.KAFKA_SERVER_PORT }}
           # REDIS_HOST: ${{ secrets.CACHE_SERVER_HOST }}
           # REDIS_PORT: 6379
           ELASTI_CACHE_NODE: ${{ secrets.ELASTI_CACHE_NODE }}
