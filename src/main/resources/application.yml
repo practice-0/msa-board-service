@@ -27,9 +27,8 @@ spring:
     
   data:
     redis:
-      cluster:
-        nodes:
-          - ${SPRING_DATA_REDIS_CLUSTER_NODE}
+      host: ${SPRING_DATA_REDIS_HOST}
+      port: ${SPRING_DATA_REDIS_PORT}
       ssl:
         enabled: true
 
